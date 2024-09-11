@@ -20,20 +20,20 @@ export default function Hero() {
   });
   return (
     <div className="relative w-3/4 h-screen pt-10 m-auto">
-      <div className="lg:py-10 lg:pl-10 pe-[25%] max-w-max">
-        <h2 className="font-bold text-3xl leading-[24px] lg:leading-[60px] lg:text-8xl  text-transparent bg-clip-text bg-gradient-title">
+      <div className="lg:py-10 lg:pl-10 lg:pe-[25%] max-w-max">
+        <h2 className="font-bold text-5xl leading-[35px] lg:leading-[60px] lg:text-8xl  text-transparent bg-clip-text bg-gradient-title">
           Welcome <span ref={el}></span>
         </h2>
-        <p className="font-light text-xl lg:text-4xl leading-10 text-[#858484] py-10 ">
+        <p className="font-light text-2xl lg:text-4xl leading-10 text-[#858484] py-10 ">
           As a Front-End Developer, I utilize React.js, Next.js, Vite.js, and
           Tailwind CSS to craft stunning websites that captivate audiences
           worldwide. My portfolio showcases a collection of exceptional and
           awe-inspiring creations.
         </p>
 
-        <button className="border-none rounded-[50px] px-12 py-3 lg:px-32 lg:py-8 text-[#fff]  flex top-0 left-0 bg-gradient transition-all duration-700 ease-in">
+        <button className="border-none rounded-[50px] px-14 py-4 lg:px-32 lg:py-8 text-[#fff] flex top-0 left-0 bg-gradient transition-all duration-700 ease-in">
           <a
-            className="lg:text-4xl text-xl font-semibold"
+            className="lg:text-4xl text-2xl font-semibold"
             href="https://drive.google.com/u/0/uc?id=1ysEPFMhB4BXCFtADtwkZN8vwvnQYzXnS&export=download"
             download
           >
