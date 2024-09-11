@@ -19,7 +19,7 @@ export default function Hero() {
     });
   });
   return (
-    <div className="relative w-3/4 h-screen pt-10 m-auto">
+    <div className="relative w-3/4 h-[80vh] pt-10 m-auto ">
       <div className="lg:py-10 lg:pl-10 lg:pe-[25%] max-w-max">
         <h2 className="font-bold text-5xl leading-[35px] lg:leading-[60px] lg:text-8xl  text-transparent bg-clip-text bg-gradient-title">
           Welcome <span ref={el}></span>
