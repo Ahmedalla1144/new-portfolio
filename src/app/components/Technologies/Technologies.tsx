@@ -5,7 +5,7 @@ export default function Technologies() {
   return (
     <Section title="Technologies">
       <p className=" text-3xl lg:text-4xl leading-normal font-thin py-10 text-[#FFFFFF80] tracking-widest">
-        I've worked with a range technologies in the web development world From
+      I have worked with a range technologies in the web development world From
         Back-end To Design
       </p>
       <ul className="flex flex-wrap gap-10 justify-between items-center pt-10 w-4/5 pb-10">
