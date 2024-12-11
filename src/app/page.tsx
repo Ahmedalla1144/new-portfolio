@@ -7,6 +7,7 @@ import Technologies from "./components/Technologies/Technologies";
 export default function Home() {
   return (
     <>
+    <h1>hey</h1>
       <Hero />
       <Projects />
       <Technologies />
