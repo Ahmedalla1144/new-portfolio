@@ -31,6 +31,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
               alt={project.title}
               width={20000}
               height={2000}
+              loading="lazy"
             />
             <div className="text-center w-full">
               <h3 className="font-medium tracking-widest text-[#9CC9E3] text-5xl py-2 px-1">
