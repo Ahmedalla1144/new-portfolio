@@ -31,7 +31,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
               alt={project.title}
               width={375}
               height={200}
-              priority
+              priority={true}
             />
             <div className="text-center w-full">
               <h3 className="font-medium tracking-widest text-[#9CC9E3] text-5xl py-2 px-1">
@@ -39,7 +39,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
               </h3>
               <hr className="w-[60px] h-[3px] mx-auto my-[20px] bg-[#D0BB57]" />
             </div>
-            <p className="w-full px-12 text-[#E4E6E7] leading-10 text-justify">
+            <p className="w-full px-12 text-[#E4E6E7] leading-10 md:text-justify">
               {project.description}
             </p>
             <div className="text-center">
