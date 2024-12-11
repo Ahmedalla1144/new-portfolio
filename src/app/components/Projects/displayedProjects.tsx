@@ -29,9 +29,9 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
             <Image
               src={project.image}
               alt={project.title}
-              width={20000}
-              height={2000}
-              loading="lazy"
+              width={375}
+              height={200}
+              priority
             />
             <div className="text-center w-full">
               <h3 className="font-medium tracking-widest text-[#9CC9E3] text-5xl py-2 px-1">
