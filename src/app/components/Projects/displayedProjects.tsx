@@ -39,7 +39,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
               </h3>
               <hr className="w-[60px] h-[3px] mx-auto my-[20px] bg-[#D0BB57]" />
             </div>
-            <p className="w-full px-12 text-[#E4E6E7] leading-10 md:text-justify">
+            <p className="w-full px-4 lg:px-12 text-[#E4E6E7] leading-10 text-justify">
               {project.description}
             </p>
             <div className="text-center">

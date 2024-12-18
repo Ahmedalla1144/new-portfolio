@@ -15,7 +15,7 @@ export default function About() {
   ];
   return (
     <Section title="About">
-      <p className="text-2xl lg:text-4xl tracking-wider text-[#FFFFFF80] font-light leading-9 lg:leading-[40px] pt-10 pb-5">
+      <p className="text-2xl lg:text-4xl tracking-wider text-[#FFFFFF80] font-light leading-9 lg:leading-[35px] pt-10 pb-5">
         I am a skilled front-end web developer with expertise in HTML, CSS,
         JavaScript, and responsive design. I have a strong eye for aesthetics,
         attention to detail, and a passion for creating engaging user
