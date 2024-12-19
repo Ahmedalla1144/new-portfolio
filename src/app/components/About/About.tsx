@@ -23,14 +23,14 @@ export default function About() {
         appealing and interactive websites that demonstrate my abilities.
       </p>
       <ul className="max-w-5xl p-0 list-none gap-10 flex justify-between pb-20 overflow-x-scroll snap-mandatory touch-pan-x lg:overflow-auto pt-10">
-        {years.map((year) => (
+        {years.map(({year, accomplishment}) => (
           <div
             className="bg-[#0e131f] lg:bg-inherit rounded py-3 px-2"
-            key={year.year}
+            key={year}
           >
             <div className="flex gap-10">
               <h4 className="text-2xl lg:text-4xl tracking-wider font-bold bg-gradient-title bg-clip-text text-transparent">
-                {year.year}
+                {year}
               </h4>
               <svg
                 width="180"
@@ -67,7 +67,7 @@ export default function About() {
               </svg>
             </div>
             <p className="text-[#FFFFFF80] text-xl lg:text-3xl tracking-wider leading-10 lg:leading-10">
-              {year.accomplishment}
+              {accomplishment}
             </p>
           </div>
         ))}
