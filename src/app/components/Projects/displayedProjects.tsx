@@ -20,7 +20,6 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
   };
   return (
     <Section title="Projects">
-      Ahmed
       <div className="grid grid-col-1 lg:grid-cols-2 place-items-center gap-20 py-10">
         {projects.slice(0, displayedProjects).map((project) => (
           <div
