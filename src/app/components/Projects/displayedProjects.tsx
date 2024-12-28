@@ -11,6 +11,8 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
   const [isAnimating, setIsAnimating] = useState(false);
   const links = ["Code", "Visit"];
 
+  console.log(projects)
+
   const handleShowMore = () => {
     setIsAnimating(true);
     setTimeout(() => {
