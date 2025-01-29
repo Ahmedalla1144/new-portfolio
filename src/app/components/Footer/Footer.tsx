@@ -21,7 +21,7 @@ export default function Footer() {
         </ul>
         <div className="flex flex-wrap gap-10 justify-center lg:justify-between pt-10 lg:pt-20 items-center pb-10 lg:pb-0">
           <div>
-            <p className="text-[#ffffff80] hover:text-white transition-all duration-150 text-xl lg:text-3xl tracking-wider">This Portfolio made by Ahmed Alaa, © Last updated At {new Date().getFullYear()} {new Date().getMonth()}. </p>
+            <p className="text-[#ffffff80] hover:text-white transition-all duration-150 text-xl lg:text-3xl tracking-wider">This Portfolio made by Ahmed Alaa, © Last updated At {new Date().getFullYear()} {new Date().getMonth()+1}. </p>
           </div>
           <div className="flex gap-5 text-4xl lg:text-5xl">
             <Social />
