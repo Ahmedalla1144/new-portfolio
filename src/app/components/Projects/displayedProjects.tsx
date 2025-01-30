@@ -11,6 +11,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
   const [isAnimating, setIsAnimating] = useState(false);
   const links = ["Code", "Visit"];
 
+  console.log(projects);
   const handleShowMore = () => {
     setIsAnimating(true);
     setTimeout(() => {
@@ -59,18 +60,27 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
               </ul>
             </div>
             <ul className="list-none flex justify-around p-0 my-10">
-              {links.map((link) => (
-                <li key={link}>
-                  <a
-                    href={project.visit}
-                    className="text-[#D8BFBF] text-2xl py-4 px-6 bg-[#6B3030] rounded-2xl transition-all duration-500 hover:bg-[#771d1d]"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href={project.source}
+                  className="text-[#D8BFBF] text-2xl py-4 px-6 bg-[#6B3030] rounded-2xl transition-all duration-500 hover:bg-[#771d1d]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Code
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href={project.visit}
+                  className="text-[#D8BFBF] text-2xl py-4 px-6 bg-[#6B3030] rounded-2xl transition-all duration-500 hover:bg-[#771d1d]"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit
+                </a>
+              </li>
             </ul>
           </div>
         ))}
