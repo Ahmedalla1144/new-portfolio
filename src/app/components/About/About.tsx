@@ -26,7 +26,7 @@ export default function About() {
         experiences. My portfolio showcases a diverse range of visually
         appealing and interactive websites that demonstrate my abilities.
       </p>
-      <ul className="max-w-5xl p-0 list-none gap-10 flex justify-between pb-20 overflow-x-scroll snap-mandatory touch-pan-x lg:overflow-auto pt-10">
+      <ul className="max-w-full p-0 list-none gap-10 flex justify-between pb-20 overflow-x-scroll snap-mandatory touch-pan-x lg:overflow-auto pt-10">
         {years.map(({year, accomplishment}) => (
           <div
             className="bg-[#0e131f] lg:bg-inherit rounded py-3 px-2"
