@@ -12,6 +12,10 @@ export default function About() {
       accomplishment:
         "Became a full stack web developer, creating websites and continuously developing my skills to excel in full stack development.",
     },
+    {
+      year: 2025,
+      accomplishment: "Making a perfect web applications with my new skills like: Next.js and Laravel with Inertia.js React and Typescript.",
+    }
   ];
   return (
     <Section title="About">
