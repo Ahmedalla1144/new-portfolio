@@ -8,15 +8,10 @@ interface DisplayedProjects {
 }
 export default function DisplayedProjects({ projects }: DisplayedProjects) {
   const [displayedProjects, setDisplayedProjects] = useState(2);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const links = ["Code", "Visit"];
 
-  console.log(projects);
   const handleShowMore = () => {
-    setIsAnimating(true);
     setTimeout(() => {
       setDisplayedProjects(displayedProjects + 2);
-      setIsAnimating(false);
     }, 100);
   };
   return (
@@ -25,63 +20,67 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
         {projects.slice(0, displayedProjects).map((project) => (
           <div
             key={project.id}
-            className="rounded-2xl shadow-lg shadow-[#504E4E] w-[250px] md:w-[400px] flex flex-col gap-1 py-8 px-5"
+            className="rounded-2xl shadow-lg shadow-[#504E4E] w-full max-w-[400px] md:w-[400px] flex flex-col gap-1"
           >
             <Image
               src={project.image}
               alt={project.title}
-              width={375}
+              width={400}
               height={200}
               priority={true}
+              onClick={() => window.open(project.visit, "_blank")}
+              className="m-auto cursor-pointer rounded-2xl p-1"
             />
-            <div className="text-center w-full">
-              <h3 className="font-medium tracking-widest text-[#9CC9E3] text-5xl py-2 px-1">
-                {project.title}
-              </h3>
-              <hr className="w-[60px] h-[3px] mx-auto my-[20px] bg-[#D0BB57]" />
-            </div>
-            <p className="w-full px-4 lg:px-12 text-[#E4E6E7] leading-10 text-justify">
-              {project.description}
-            </p>
-            <div className="text-center">
-              <div className="w-full">Stack</div>
-              <ul
-                className={`flex flex-wrap p-8 ${
-                  project.tags.length > 4
-                    ? "justify-center gap-10"
-                    : "justify-around"
-                }`}
-              >
-                {project.tags.map((tag) => (
-                  <li className="text-[#D8BFBF]" key={tag}>
-                    {tag}
-                  </li>
-                ))}
+            <div className="flex flex-col gap-1">
+              <div className="text-center w-full">
+                <h3 className="font-medium tracking-widest text-[#9CC9E3] text-5xl py-2 px-1">
+                  {project.title}
+                </h3>
+                <hr className="w-[60px] h-[3px] mx-auto my-[20px] bg-[#D0BB57]" />
+              </div>
+              <p className="w-full px-4 lg:px-12 text-[#E4E6E7] leading-10 text-justify">
+                {project.description}
+              </p>
+              <div className="text-center">
+                <div className="w-full">Stack</div>
+                <ul
+                  className={`flex flex-wrap p-8 ${
+                    project.tags.length > 4
+                      ? "justify-center gap-10"
+                      : "justify-around"
+                  }`}
+                >
+                  {project.tags.map((tag) => (
+                    <li className="text-[#D8BFBF]" key={tag}>
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <ul className="list-none flex justify-around p-0 my-10">
+                <li>
+                  <a
+                    href={project.source}
+                    className="text-[#D8BFBF] text-2xl py-4 px-6 bg-[#6B3030] rounded-2xl transition-all duration-500 hover:bg-[#771d1d]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Code
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href={project.visit}
+                    className="text-[#D8BFBF] text-2xl py-4 px-6 bg-[#6B3030] rounded-2xl transition-all duration-500 hover:bg-[#771d1d]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit
+                  </a>
+                </li>
               </ul>
             </div>
-            <ul className="list-none flex justify-around p-0 my-10">
-              <li>
-                <a
-                  href={project.source}
-                  className="text-[#D8BFBF] text-2xl py-4 px-6 bg-[#6B3030] rounded-2xl transition-all duration-500 hover:bg-[#771d1d]"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Code
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href={project.visit}
-                  className="text-[#D8BFBF] text-2xl py-4 px-6 bg-[#6B3030] rounded-2xl transition-all duration-500 hover:bg-[#771d1d]"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Visit
-                </a>
-              </li>
-            </ul>
           </div>
         ))}
       </div>

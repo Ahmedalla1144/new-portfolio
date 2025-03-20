@@ -14,20 +14,21 @@ export default function About() {
     },
     {
       year: 2025,
-      accomplishment: "Making a perfect web applications with my new skills like: Next.js and Laravel with Inertia.js React and Typescript.",
-    }
+      accomplishment:
+        "Making a perfect web applications with my new skills like: Next.js and Laravel with Inertia.js React and Typescript.",
+    },
   ];
   return (
     <Section title="About">
       <p className="text-2xl lg:text-4xl tracking-wider text-[#FFFFFF80] font-light leading-9 lg:leading-[35px] pt-10 pb-5">
-        I am a skilled front-end web developer with expertise in HTML, CSS,
-        JavaScript, and responsive design. I have a strong eye for aesthetics,
-        attention to detail, and a passion for creating engaging user
-        experiences. My portfolio showcases a diverse range of visually
-        appealing and interactive websites that demonstrate my abilities.
+        I am a full-stack developer skilled in Laravel, Next.js, TypeScript,
+        React, and Tailwind CSS. I build dynamic web applications that deliver
+        seamless user experiences. My portfolio features a range of projects
+        showcasing my ability to create visually appealing and responsive
+        applications, blending strong design with efficient functionality.
       </p>
       <ul className="max-w-full p-0 list-none gap-10 flex justify-between pb-20 overflow-x-scroll snap-mandatory touch-pan-x lg:overflow-auto pt-10">
-        {years.map(({year, accomplishment}) => (
+        {years.map(({ year, accomplishment }) => (
           <div
             className="bg-[#0e131f] lg:bg-inherit rounded py-3 px-2"
             key={year}

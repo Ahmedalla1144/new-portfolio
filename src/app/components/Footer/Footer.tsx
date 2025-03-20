@@ -8,7 +8,7 @@ export default function Footer() {
     <Section>
       <div className="border-t pt-20 border-[#ffffff1a]">
         <ul className="flex flex-wrap gap-10 pb-5 list-none">
-          <div className="flex flex-col gap-10 w-1/4 p-3">
+          <div className="flex flex-col gap-10  p-3">
             <h4 className="uppercase text-[#fff6] text-lg lg:text-xl leading-7 tracking-wider font-semibold">CAll</h4>
             <Link className="text-[#ffffffbf] text-2xl lg:text-3xl transition-all duration-500 hover:ml-3 hover:text-white w-max" href="tel:+201207213250">+20 1207213250</Link>
           </div>
