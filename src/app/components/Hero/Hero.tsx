@@ -1,11 +1,11 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import BgAnimation from "./BgAnimation";
 import Typed from "typed.js";
 
 export default function Hero() {
   const el = useRef<HTMLSpanElement | null>(null);
-  React.useEffect(() => {
+  useEffect(() => {
     new Typed(el.current, {
       strings: [
         " To<br />My Personal Portfolio",
@@ -19,9 +19,9 @@ export default function Hero() {
     });
   });
   return (
-    <div className="relative w-3/4 h-[60vh] md:h-[80vh] pt-10 m-auto ">
+    <div className="relative w-3/4  md:h-[80vh] pt-10 m-auto ">
       <div className="lg:py-10 lg:pl-10 lg:pe-[25%] max-w-max">
-        <h2 className="font-bold text-5xl leading-[35px] lg:leading-[60px] lg:text-7xl  text-transparent bg-clip-text bg-gradient-title">
+        <h2 className="font-bold text-5xl leading-[35px] lg:leading-[60px] lg:text-7xl text-transparent bg-clip-text bg-gradient-title">
           Welcome <span ref={el}></span>
         </h2>
         <p className="font-light text-2xl lg:text-4xl leading-10 lg:leading-[30px] text-[#858484] py-10 ">
