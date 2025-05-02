@@ -11,7 +11,7 @@ export default function Hero() {
         " To<br />My Personal Portfolio",
         "<br />I'm Ahmed Alaa",
         "<br />I'm A Front-End Developer<br />Using React Js",
-        "<br />I'm A Full-Stack Web Developer<br />Using Laravel Inertia Js With React And TypeScript"
+        "<br />I'm A Full-Stack Web Developer<br />Using Laravel Inertia Js With React And TypeScript",
       ],
       typeSpeed: 150,
       backSpeed: 100,
@@ -34,7 +34,7 @@ export default function Hero() {
         <button className="border-none rounded-[50px] px-14 py-4 lg:px-32 lg:py-8 text-[#fff] flex top-0 left-0 bg-gradient transition-all duration-700 ease-in">
           <a
             className="lg:text-4xl text-2xl font-semibold"
-            href="https://drive.google.com/u/0/uc?id=1u7tbVQOs2J_PbBnhqaHLSMt7gCYL_lau&export=download"
+            href="https://drive.google.com/u/0/uc?id=1bZQ_iL7feMC5Ldmw3ukWuMME4BOjTDls&export=download"
             download
           >
             Download CV
