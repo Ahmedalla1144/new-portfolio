@@ -11,6 +11,7 @@ export default function Hero() {
         " To<br />My Personal Portfolio",
         "<br />I'm Ahmed Alaa",
         "<br />I'm A Front-End Developer<br />Using React Js",
+        "<br />I'm A Full-Stack Web Developer<br />Using Laravel Inertia Js With React And TypeScript"
       ],
       typeSpeed: 150,
       backSpeed: 100,
