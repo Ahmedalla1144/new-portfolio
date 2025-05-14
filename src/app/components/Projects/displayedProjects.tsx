@@ -14,9 +14,9 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
   const handleShowMore = () => {
     setLoading(true);
     setTimeout(() => {
-      setDisplayedProjects(displayedProjects + 2);
+      setDisplayedProjects(displayedProjects + 3);
       setLoading(false);
-    }, 500);
+    }, 300);
   };
   return (
     <Section title="Projects">
