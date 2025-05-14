@@ -2,17 +2,21 @@
 import Image from "next/image";
 import Section from "../Section/Section";
 import { useState } from "react";
+import Loading from "@/app/loading";
 
 interface DisplayedProjects {
   projects: Project[];
 }
 export default function DisplayedProjects({ projects }: DisplayedProjects) {
   const [displayedProjects, setDisplayedProjects] = useState(2);
+  const [loading, setLoading] = useState(false);
 
   const handleShowMore = () => {
+    setLoading(true);
     setTimeout(() => {
       setDisplayedProjects(displayedProjects + 2);
-    }, 100);
+      setLoading(false);
+    }, 500);
   };
   return (
     <Section title="Projects">
@@ -84,6 +88,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
           </div>
         ))}
       </div>
+      {loading && <Loading />}
       <div className="text-center py-5">
         <button
           className={`bg-gradient py-5 px-8 rounded-[50px] text-3xl hover:scale-110 transition-all duration-500 ${

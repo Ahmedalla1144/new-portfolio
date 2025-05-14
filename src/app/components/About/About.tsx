@@ -33,7 +33,7 @@ export default function About() {
             className="bg-[#0e131f] lg:bg-inherit rounded py-3 px-2"
             key={year}
           >
-            <div className="flex gap-10">
+            <div className="flex gap-10 items-center">
               <h4 className="text-2xl lg:text-4xl tracking-wider font-bold bg-gradient-title bg-clip-text text-transparent">
                 {year}
               </h4>
@@ -43,7 +43,7 @@ export default function About() {
                 viewBox="0 0 208 6"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="sc-cOifbb dESMXW"
+                className="sc-cOifbb dESMXW animate-custom-ping"
               >
                 <path
                   fillRule="evenodd"

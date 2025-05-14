@@ -10,7 +10,7 @@ export default function Header() {
         href="/"
         className="flex justify-center items-center hover:cursor-pointer order-1"
       >
-        <DiCssdeck className="lg:text-5xl text-4xl" />
+        <DiCssdeck className="lg:text-5xl text-4xl animate-spin" />
         <h1>Portfolio</h1>
       </Link>
       <div className="flex gap-4 text-2xl  lg:gap-12 lg:text-4xl leading-8 text-[#ffffffbf] order-3 md:order-2 m-auto md:pt-0 pt-5 px-0 md:px-0 ss:px-32 xs:px-56 ">

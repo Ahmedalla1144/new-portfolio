@@ -13,7 +13,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         gradient: "linear-gradient(to right ,#13ADC7, #945DD6)",
-        "gradient-title": "linear-gradient(121.57deg, rgb(255, 255, 255) 17.77%, rgba(255, 255, 255, 0.66) 60.15%);",
+        "gradient-title":
+          "linear-gradient(121.57deg, rgb(255, 255, 255) 17.77%, rgba(255, 255, 255, 0.66) 60.15%);",
+      },
+      animation: {
+        "custom-ping": "custom-ping 2s infinite",
+      },
+      keyframes: {
+        "custom-ping": {
+          "75%, 100%": {
+            transform: "scale(1.5)",
+            opacity: "0",
+          },
+        },
       },
       screens: {
         ss: "445px",

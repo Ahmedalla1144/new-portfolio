@@ -11,7 +11,7 @@ export default function Technologies() {
       <ul className="flex flex-wrap gap-10 justify-between items-center pt-10 w-4/5 pb-10">
         {technologies.map((technology, id) => (
           <li className="text-5xl flex lg:flex-col gap-4" key={id}>
-            {technology.icon}
+            <p className="animate-bounce">{technology.icon}</p>
             <div className="flex flex-col gap-5">
               <h4 className="text-4xl lg:text-5xl font-semibold tracking-wider">
                 {technology.title}
