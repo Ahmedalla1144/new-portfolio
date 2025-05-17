@@ -1,18 +1,16 @@
 import Section from "../Section/Section";
 import getProjects from "../Projects/getProjects";
 import getCountVisits from "./getCountVisits";
+import AnimateNumber from "../AnimateNumber/AnimateNumber";
 
 export default async function Acomplishments() {
   const projects: Project[] = await getProjects();
   const visitCount = await getCountVisits();
 
-
-  const content = (title: string | number, desc: string) => {
+  const content = (title: number, desc: string) => {
     return (
       <div className="bg-[#212d45] rounded-xl p-[24px] h-[110px] md:h-[135px] md:py-10 font-sans tracking-wider">
-        <h4 className="font-semibold text-[#ffffff] mb-[8px] text-4xl md:text-5xl lg:text-6xl leading-6 md:leading-8 lg:leading-10 tracking-wider">
-          {title}+
-        </h4>
+        <AnimateNumber className='font-semibold text-[#ffffff] mb-[8px] text-4xl md:text-5xl lg:text-6xl leading-6 md:leading-8 lg:leading-10 tracking-wider' number={title}>+</AnimateNumber>
         <p className="text-[#ffffffbf] leading-7 text-lg lg:text-3xl pt-3">
           {desc}
         </p>
