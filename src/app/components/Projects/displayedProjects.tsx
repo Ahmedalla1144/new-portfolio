@@ -69,7 +69,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Code
+                    Source
                   </a>
                 </li>
 
@@ -80,7 +80,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Visit
+                    Live Demo
                   </a>
                 </li>
               </ul>
