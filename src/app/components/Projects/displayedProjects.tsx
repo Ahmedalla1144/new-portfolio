@@ -3,7 +3,7 @@ import Image from "next/image";
 import Section from "../Section/Section";
 import { useState } from "react";
 import Loading from "@/app/loading";
-import { AiFillGithub, AiOutlineDeliveredProcedure } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaArrowUpFromBracket } from "react-icons/fa6";
 
 interface DisplayedProjects {
@@ -12,6 +12,7 @@ interface DisplayedProjects {
 export default function DisplayedProjects({ projects }: DisplayedProjects) {
   const [displayedProjects, setDisplayedProjects] = useState(3);
   const [loading, setLoading] = useState(false);
+  console.log(projects)
 
   const handleShowMore = () => {
     setLoading(true);
