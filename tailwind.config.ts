@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -17,12 +18,20 @@ const config: Config = {
           "linear-gradient(121.57deg, rgb(255, 255, 255) 17.77%, rgba(255, 255, 255, 0.66) 60.15%);",
       },
       animation: {
-        "custom-ping": "custom-ping 2s infinite",
+        "custom-ping": "custom-ping 3s infinite",
       },
       keyframes: {
         "custom-ping": {
-          "75%, 100%": {
-            transform: "scale(1.5)",
+          "100%": {
+            transform: "scale(1) translateX(-30px)",
+            opacity: "0",
+          },
+          "50%": {
+            transform: "scale(1) translateX(-30px)",
+            opacity: "1",
+          },
+          "0%": {
+            transform: "scale(0) translateX(0px)",
             opacity: "0",
           },
         },

@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import BgAnimation from "./BgAnimation";
 import Typed from "typed.js";
+import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function Hero() {
   const el = useRef<HTMLSpanElement | null>(null);
@@ -19,7 +20,7 @@ export default function Hero() {
     });
   });
   return (
-    <div className="relative w-3/4  md:h-[80vh] pt-10 m-auto ">
+    <div className="relative w-3/4  md:h-[50vh] pt-10 m-auto lg:h-screen">
       <div className="lg:py-10 lg:pl-10 lg:pe-[25%] max-w-max">
         <h2 className="font-bold text-5xl leading-[35px] lg:leading-[60px] lg:text-7xl text-transparent bg-clip-text bg-gradient-title">
           Welcome <span ref={el}></span>
@@ -31,13 +32,14 @@ export default function Hero() {
           awe-inspiring creations.
         </p>
 
-        <button className="border-none rounded-[50px] px-14 py-4 lg:px-32 lg:py-8 text-[#fff] flex top-0 left-0 bg-gradient transition-all duration-700 ease-in">
+        <button className="border-none rounded-[50px] px-14 py-4 lg:px-20 lg:py-8 text-[#fff] flex top-0 left-0 bg-gradient transition-all duration-700 ease-in">
           <a
-            className="lg:text-4xl text-2xl font-semibold"
+            className="lg:text-3xl text-2xl font-semibold flex justify-center items-center gap-2"
             href="https://drive.google.com/u/0/uc?id=1bZQ_iL7feMC5Ldmw3ukWuMME4BOjTDls&export=download"
             download
           >
-            Download CV
+            <MdOutlineFileDownload className="text-4xl animate-bounce" />
+            <span>Download CV</span>
           </a>
         </button>
       </div>

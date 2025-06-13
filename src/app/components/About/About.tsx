@@ -22,7 +22,7 @@ export default function About() {
   ];
   return (
     <Section title="About">
-      <p className="text-2xl lg:text-4xl tracking-wider text-[#FFFFFF80] font-light leading-9 lg:leading-[35px] pt-10 pb-5">
+      <p className="text-2xl lg:text-3xl tracking-wider text-[#FFFFFF80] font-light leading-9 lg:leading-[30px] pt-10 pb-5">
         I am a full-stack developer skilled in Laravel, Next.js, TypeScript,
         React, and Tailwind CSS. I build dynamic web applications that deliver
         seamless user experiences. My portfolio features a range of projects
@@ -75,7 +75,7 @@ export default function About() {
                   </defs>
                 </svg>
               </div>
-              <p className="text-[#FFFFFF80] text-xl lg:text-3xl tracking-wider leading-10 lg:leading-10">
+              <p className="text-[#FFFFFF80] text-xl lg:text-2xl tracking-wider leading-10 lg:leading-8 pt-2">
                 {accomplishment}
               </p>
             </div>
