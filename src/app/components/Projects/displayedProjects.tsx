@@ -37,7 +37,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
                 height={200}
                 priority={true}
                 onClick={() => window.open(project.visit, "_blank")}
-                className="cursor-pointer rounded-t-2xl"
+                className="cursor-pointer rounded-t-2xl" 
               />
               <div className="text-center w-full">
                 <h3 className="font-medium tracking-widest text-[#9CC9E3] text-5xl py-2 px-1">
