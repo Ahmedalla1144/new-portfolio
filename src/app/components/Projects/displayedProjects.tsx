@@ -12,7 +12,7 @@ interface DisplayedProjects {
 export default function DisplayedProjects({ projects }: DisplayedProjects) {
   const [displayedProjects, setDisplayedProjects] = useState(3);
   const [loading, setLoading] = useState(false);
-  console.log(projects[0].image)
+  console.log(projects[0].image);
 
   const handleShowMore = () => {
     setLoading(true);
@@ -30,7 +30,6 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
             className="rounded-2xl shadow-lg shadow-[#504E4E] w-full max-w-[400px] md:w-[400px] flex flex-col gap-1 h-full justify-between"
           >
             <div className="flex flex-col gap-3">
-              {console.log(project.image)}
               <Image
                 src={project.image}
                 alt={project.title}
