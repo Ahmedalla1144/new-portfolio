@@ -32,16 +32,16 @@ export default function Hero() {
           awe-inspiring creations.
         </p>
 
-        <button className="border-none rounded-[50px] px-14 py-4 lg:px-20 lg:py-8 text-[#fff] flex top-0 left-0 bg-gradient transition-all duration-700 ease-in">
-          <a
-            className="lg:text-3xl text-2xl font-semibold flex justify-center items-center gap-2"
-            href="https://drive.google.com/u/0/uc?id=1bZQ_iL7feMC5Ldmw3ukWuMME4BOjTDls&export=download"
-            download
-          >
+        <a
+          className="lg:text-3xl text-2xl font-semibold flex justify-center items-center gap-2"
+          href="https://drive.google.com/u/0/uc?id=1bZQ_iL7feMC5Ldmw3ukWuMME4BOjTDls&export=download"
+          download
+        >
+          <button className="border-none rounded-[50px] px-14 py-4 lg:px-20 lg:py-8 text-[#fff] flex top-0 left-0 bg-gradient transition-all duration-700 ease-in">
             <MdOutlineFileDownload className="text-4xl animate-bounce" />
             <span>Download CV</span>
-          </a>
-        </button>
+          </button>
+        </a>
       </div>
       <BgAnimation />
     </div>
