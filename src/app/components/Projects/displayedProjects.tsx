@@ -23,7 +23,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
   };
   return (
     <Section title="Projects">
-      <div className="grid grid-col-1 lg:grid-cols-3 place-items-center gap-20 py-10">
+      <div className="grid grid-col-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-20 py-10">
         {projects.slice(0, displayedProjects).map((project) => (
           <div
             key={project.id}
@@ -54,7 +54,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
                 <div className="w-full animate-pulse">Stack</div>
                 <ul
                   className={`flex flex-wrap p-8 ${
-                    project.tags.length > 4
+                    project.tags.length >= 4
                       ? "justify-center gap-10"
                       : "justify-around"
                   }`}
@@ -98,7 +98,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
       {loading && <Loading />}
       <div className="text-center py-5">
         <button
-          className={`bg-gradient py-5 px-8 rounded-[50px] text-3xl hover:scale-110 transition-all duration-500 ${
+          className={`bg-gradient py-5 px-8 rounded-[50px] text-3xl transition-all duration-500 hover:scale-105 ${
             projects.length <= displayedProjects && "hidden"
           }`}
           onClick={handleShowMore}
