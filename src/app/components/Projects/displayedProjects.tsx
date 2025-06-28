@@ -12,7 +12,6 @@ interface DisplayedProjects {
 export default function DisplayedProjects({ projects }: DisplayedProjects) {
   const [displayedProjects, setDisplayedProjects] = useState(3);
   const [loading, setLoading] = useState(false);
-  console.log(projects[0].image);
 
   const handleShowMore = () => {
     setLoading(true);
