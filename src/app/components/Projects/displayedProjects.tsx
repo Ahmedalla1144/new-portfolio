@@ -22,7 +22,7 @@ export default function DisplayedProjects({ projects }: DisplayedProjects) {
   };
   return (
     <Section title="Projects">
-      <div className="grid grid-col-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center gap-20 py-10">
+      <div className="grid grid-col-1 lg:grid-cols-2 2xl:grid-cols-3 place-items-center gap-20 py-10">
         {projects.slice(0, displayedProjects).map((project) => (
           <div
             key={project.id}
