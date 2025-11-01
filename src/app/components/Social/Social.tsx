@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 import { styles } from "../Header/styles";
 
 export default function Social() {
@@ -19,6 +19,10 @@ export default function Social() {
 
       <Link className={styles.socialIcons} href="https://www.facebook.com/ahmed.alla.313">
         <AiFillFacebook />
+      </Link>
+
+      <Link className={styles.socialIcons} href='https://wa.me/201207213250'>
+        <AiOutlineWhatsApp />
       </Link>
     </>
   );
