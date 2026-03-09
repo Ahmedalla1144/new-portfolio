@@ -1,11 +1,14 @@
 import Section from "../Section/Section";
 import getProjects from "../Projects/getProjects";
 import getCountVisits from "./getCountVisits";
+import getGithubStats from "./getGithubStats";
 import AnimateNumber from "../AnimateNumber/AnimateNumber";
 
 export default async function Acomplishments() {
   const projects: Project[] = await getProjects();
   const visitCount = await getCountVisits();
+  const githubStats = await getGithubStats();
+  const visits = Number(visitCount?.portfolio_visits);
 
   const content = (title: number, desc: string) => {
     return (
@@ -21,9 +24,9 @@ export default async function Acomplishments() {
     <Section title="Personal Acomplishments">
       <div className="grid grid-cols-2 gap-10 max-w-[500px] my-6 md:grid-cols-3 lg:grid-cols-4 lg:max-w-full py-10">
         {content(projects.length, "Open Source Projects")}
-        {content(visitCount.portfolio_visits, "Visits")}
-        {content(1900, "Github Followers")}
-        {content(5000, "Github Stars")}
+        {content(Number.isFinite(visits) ? visits : 0, "Visits")}
+        {content(githubStats.followers, "Github Followers")}
+        {content(githubStats.stars, "Github Stars")}
       </div>
     </Section>
   );
