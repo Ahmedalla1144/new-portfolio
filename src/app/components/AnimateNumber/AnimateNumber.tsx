@@ -8,15 +8,15 @@ type Props = {
 };
 
 export default function AnimateNumber({ number, className }: Props) {
-  const [props, set] = useSpring(() => ({ number: 0 }));
+  const [props, api] = useSpring(() => ({ number: 0 }));
 
   useEffect(() => {
     const normalizedNumber = Number(number);
-    set({
+    api.start({
       number: Number.isFinite(normalizedNumber) ? normalizedNumber : 0,
       config: { friction: 55, mass: 2, tension: 50 },
     });
-  }, [number, set]);
+  }, [number, api]);
 
   return (
     <animated.h4 className={className}>
